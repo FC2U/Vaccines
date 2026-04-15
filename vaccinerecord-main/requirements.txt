@@ -1,4 +1,0 @@
-streamlit
-pyyaml
-reportlab
-pandas
