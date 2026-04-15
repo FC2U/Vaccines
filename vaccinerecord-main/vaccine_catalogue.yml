@@ -1,0 +1,456 @@
+hep_a:
+  display: "Hepatitis A"
+  products:
+    - name: "Avaxim"
+    - name: "Avaxim Junior"
+    - name: "Vaqta"
+    - name: "Vaqta Paediatric"
+  course_plans:
+    - name: "Standard (0, 6 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_months: 6
+          validity_text: "6 months"
+        - label: "Dose 2"
+          offset_months: 6
+          validity_years: 25
+          validity_text: "25 years"
+
+
+hep_b:
+  display: "Hepatitis B"
+  notes: "Choose standard or accelerated schedule."
+  products:
+    - name: "Engerix-B"
+    - name: "Engerix-B Paediatric"
+  course_plans:
+    - name: "Standard (0, 1 month, 6 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+        - label: "Dose 2"
+          offset_months: 1
+        - label: "Dose 3"
+          offset_months: 6
+          validity_years: 5
+          validity_text: "5 years"
+
+    - name: "Accelerated (0, 7, 21 days)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+        - label: "Dose 2"
+          offset_days: 7
+        - label: "Dose 3"
+          offset_days: 21
+          validity_years: 1
+          validity_text: "1 year"
+
+
+hep_b_booster:
+  display: "Hepatitis B"
+  notes: "Booster dose."
+  products:
+    - name: "Engerix-B Booster"
+  course_plans:
+    - name: "Booster (single dose)"
+      doses:
+        - label: "Booster"
+          offset_days: 0
+          validity_years: 5
+          validity_text: "5 years"
+
+
+hep_a_b_twinrix:
+  display: "Hepatitis A + B (Twinrix)"
+  products:
+    - name: "Twinrix Adult"
+    - name: "Twinrix Paediatric"
+  course_plans:
+    - name: "Standard (0, 1 month, 6 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_months: 1
+          validity_text: "N/A"
+        - label: "Dose 3"
+          offset_months: 6
+          validity_text: "Hep A 25y / Hep B 5y"
+
+    - name: "Accelerated (0, 7, 21 days + booster 12 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 7
+          validity_text: "N/A"
+        - label: "Dose 3"
+          offset_days: 21
+          validity_text: "Booster due in 12 months"
+        - label: "Booster"
+          offset_months: 12
+          validity_text: "Hep A 25y / Hep B 5y"
+
+
+hep_a_b_ambirix:
+  display: "Hepatitis A + B (Ambirix)"
+  products:
+    - name: "Ambirix"
+  course_plans:
+    - name: "Standard (0, 6 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_months: 6
+          validity_text: "Hep A 25y / Hep B 5y"
+
+
+rabies:
+  display: "Rabies"
+  notes: "Validity depends on risk and activities undertaken. Booster recommendations may vary."
+  products:
+    - name: "Rabipur"
+    - name: "Verorab"
+  course_plans:
+    - name: "Immunocompetent (0, 7 days)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 7
+          validity_years: 1
+          validity_text: "1 year"
+
+    - name: "Non-immunocompetent (0, 7, 21 days)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 7
+          validity_text: "N/A"
+        - label: "Dose 3"
+          offset_days: 21
+          validity_text: "N/A"
+
+    - name: "Rapid 3 course (0, 3, 7 days)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 3
+          validity_text: "N/A"
+        - label: "Dose 3"
+          offset_days: 7
+          validity_years: 1
+          validity_text: "1 year"
+
+    - name: "Booster"
+      doses:
+        - label: "Booster"
+          offset_days: 0
+          validity_years: 10
+          validity_text: "Up to 10 years (risk dependent)"
+
+
+japanese_encephalitis:
+  display: "Japanese Encephalitis"
+  products:
+    - name: "Ixiaro"
+  course_plans:
+    - name: "Accelerated (0, 7 days)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 7
+          validity_years: 1
+          validity_text: "1 year"
+
+    - name: "Standard (0, 28 days)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 28
+          validity_years: 1
+          validity_text: "1 year"
+
+    - name: "Booster"
+      doses:
+        - label: "Booster"
+          offset_days: 0
+          validity_years: 10
+          validity_text: "10 years"
+
+mmr:
+  display: "MMR (Measles, Mumps & Rubella)"
+  products:
+    - name: "Priorix"
+    - name: "M-M-RVAXPRO"
+  course_plans:
+    - name: "Standard (0, 28 days)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 28
+          validity_text: "N/A"
+
+
+chickenpox:
+  display: "Chickenpox"
+  products:
+    - name: "Varilrix"
+    - name: "Varivax"
+  course_plans:
+    - name: "Standard (0, 6 weeks)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 42
+          validity_text: "N/A"
+
+
+hpv:
+  display: "HPV (Gardasil 9)"
+  products:
+    - name: "Gardasil 9"
+  course_plans:
+    - name: "Under 25 (single dose)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "Long-term"
+    - name: "25+ immunocompetent (0, 6 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_months: 6
+          validity_text: "N/A"
+    - name: "Immunocompromised (0, 2 months, 6 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_months: 2
+          validity_text: "N/A"
+        - label: "Dose 3"
+          offset_months: 6
+          validity_text: "N/A"
+
+meningitis_b:
+  display: "Meningitis B"
+  products:
+    - name: "Bexsero"
+    - name: "Trumenba"
+  course_plans:
+    - name: "Bexsero immunocompetent (2 doses, 1 month apart)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_months: 1
+          validity_text: "1 month"
+        - label: "Dose 2"
+          offset_months: 1
+          validity_text: "N/A"
+
+    - name: "Trumenba (2 doses, 6 months apart)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_months: 6
+          validity_text: "6 months"
+        - label: "Dose 2"
+          offset_months: 6
+          validity_text: "N/A"
+
+menacwy:
+  display: "Meningococcal Meningitis (MenACWY)"
+  products:
+    - name: "MenQuadfi"
+    - name: "Nimenrix"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_years: 5
+          validity_text: "5 years"
+
+
+shingles:
+  display: "Shingles"
+  products:
+    - name: "Shingrix"
+  course_plans:
+    - name: "Standard (0, 2 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_months: 2
+          validity_text: "N/A"
+
+
+tick_borne_encephalitis:
+  display: "Tick-borne Encephalitis"
+  products:
+    - name: "TicoVac"
+    - name: "TicoVac Paediatric"
+  course_plans:
+    - name: "Primary (0, 14 days, 6 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_days: 14
+          validity_text: "N/A"
+        - label: "Dose 3"
+          offset_months: 6
+          validity_years: 3
+          validity_text: "3 years"
+    - name: "Booster"
+      doses:
+        - label: "Booster"
+          offset_days: 0
+          validity_years: 5
+          validity_text: "5 years"
+
+
+chikungunya:
+  display: "Chikungunya Vaccine"
+  products:
+    - name: "Ixchiq"
+    - name: "Vimkunya"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+
+
+cholera:
+  display: "Cholera"
+  products:
+    - name: "Vaxchora"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_years: 2
+          validity_text: "2 years"
+
+
+dengue:
+  display: "Dengue Fever Vaccine (Qdenga)"
+  products:
+    - name: "Qdenga"
+  course_plans:
+    - name: "Standard (0, 3 months)"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+        - label: "Dose 2"
+          offset_months: 3
+          validity_text: "N/A"
+
+
+dtp:
+  display: "DTP (Diphtheria, Tetanus & Polio)"
+  products:
+    - name: "Revaxis"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_years: 10
+          validity_text: "10 years"
+
+
+pertussis:
+  display: "Whooping Cough (Pertussis)"
+  products:
+    - name: "Repevax"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_years: 10
+          validity_text: "10 years"
+
+
+typhoid:
+  display: "Typhoid"
+  products:
+    - name: "Typhim"
+    - name: "Vivotif"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_years: 3
+          validity_text: "3 years"
+
+
+private_covid:
+  display: "Private Covid Vaccine (LP8.1)"
+  products:
+    - name: "Pfizer"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_months: 6
+          validity_text: "6 months"
+
+
+yellow_fever:
+  display: "Yellow Fever"
+  notes: "Single-dose vaccine."
+  products:
+    - name: "Stamaril"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "Lifetime"
+
+
+influenza:
+  display: "Influenza (Flu)"
+  products:
+    - name: "Flu Vaccine"
+  course_plans:
+    - name: "Single dose"
+      doses:
+        - label: "Dose 1"
+          offset_days: 0
+          validity_text: "N/A"
+          
