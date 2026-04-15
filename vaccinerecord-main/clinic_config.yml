@@ -1,0 +1,10 @@
+clinic_name: "Ealing Travel Clinic"
+header_right:
+  - "ealingtravelclinic.co.uk"
+  - "Email: (add later)"
+  - "Tel: (add later)"
+address_lines:
+  - "(Add address line 1)"
+  - "(Add address line 2)"
+footer_note: "“Effective until” dates are based on typical booster intervals and may vary depending on vaccination history, itinerary, and clinical risk."
+document_title: "Vaccination Record"
