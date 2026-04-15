@@ -818,13 +818,13 @@ st.subheader("Send vaccination record (Email)")
 if not st.session_state.get("pdf_preview_ready"):
     st.warning("Preview the PDF above first. Then you can send the email.")
 else:
-    subject = st.text_input("Email subject", value="Your Vaccination Record – Ealing Travel Clinic")
+    subject = st.text_input("Email subject", value="Your Vaccination Record – HealthClinic2You")
     body = st.text_area(
         "Email message",
         value=(
             f"Dear {patient_name.strip() or 'Patient'},\n\n"
-            "Please find attached your vaccination record from Ealing Travel Clinic.\n\n"
-            "Kind regards,\nEaling Travel Clinic"
+            "Please find attached your vaccination record from HealthClinic2You.\n\n"
+            "Kind regards,\nHealthClinic2You"
         ),
         height=130,
     )
