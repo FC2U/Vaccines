@@ -343,7 +343,7 @@ def build_pdf_professional(clinic_cfg: dict, patient_name: str, patient_dob: str
 
     clinic_name = clinic_cfg.get("clinic_name", "HealthClinic2You")
     clinic_website = (clinic_cfg.get("website", "www.healthclinic2you.com") or "").strip()
-    clinic_phone = (clinic_cfg.get("phone", "02085670982") or "").strip()
+    clinic_phone = (clinic_cfg.get("phone", "") or "").strip()
     clinic_address = (clinic_cfg.get("address", "") or "").strip()
 
     website_href = clinic_website
