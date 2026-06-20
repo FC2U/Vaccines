@@ -260,6 +260,7 @@ meningitis_b:
   products:
     - name: "Bexsero"
     - name: "Trumenba"
+
   course_plans:
     - name: "Bexsero immunocompetent (2 doses, 1 month apart)"
       doses:
@@ -267,8 +268,15 @@ meningitis_b:
           offset_days: 0
           validity_months: 1
           validity_text: "1 month"
+
         - label: "Dose 2"
           offset_months: 1
+          validity_text: "N/A"
+
+    - name: "Bexsero Booster"
+      doses:
+        - label: "Booster"
+          offset_days: 0
           validity_text: "N/A"
 
     - name: "Trumenba (2 doses, 6 months apart)"
@@ -277,10 +285,10 @@ meningitis_b:
           offset_days: 0
           validity_months: 6
           validity_text: "6 months"
+
         - label: "Dose 2"
           offset_months: 6
           validity_text: "N/A"
-
 menacwy:
   display: "Meningococcal Meningitis (MenACWY)"
   products:
